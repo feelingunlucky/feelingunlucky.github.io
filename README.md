@@ -1,5 +1,5 @@
 # Feeling Unlucky
 
-http://www.feelingunlucky.com
+https://www.feelingunlucky.today
 
 Shows the last google search result
