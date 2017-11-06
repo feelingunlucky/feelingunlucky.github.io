@@ -211,7 +211,7 @@ function runQuery(page, pushState) { //pages are 0-based, and contain max 100 re
 		$("#state").text("Searching...");
 		resultsSection.slideDown("fast").css("display", "inline-block");
 		onSearchStarted();
-		var url = "http://www.google.com/search?q=" + escape(query) + "&num=100&start=" + (page * 100) + "&filter=0";
+		var url = "https://www.google.com/search?q=" + escape(query) + "&num=100&start=" + (page * 100) + "&filter=0";
 		var xhttp = window.XDomainRequest ? new XDomainRequest() : new XMLHttpRequest();
 		xhttp.onreadystatechange = function() {
 			if (this.readyState === 4) {
