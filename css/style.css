@@ -17,9 +17,10 @@ body {
 	background-size: cover;
 	font-family: Arial;
 	text-align: center;
+	padding-bottom: 4em;
 }
 
-ul {
+ul, ol {
 	display: none;
 }
 
@@ -127,6 +128,14 @@ button:active {
 
 .f {
 	display: block;
+}
+
+#___gcse_0 {
+	display: none;
+}
+
+.gs-watermark {
+	display: none;
 }
 
 #state {
