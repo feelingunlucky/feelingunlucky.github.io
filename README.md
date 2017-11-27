@@ -2,4 +2,4 @@
 
 http://feelingunlucky.today
 
-Shows the last google search result
+Shows the last Google search result
