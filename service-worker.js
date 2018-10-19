@@ -21,7 +21,7 @@ self.addEventListener("fetch", function(event) {
 	event.respondWith(fetch(event.request).catch(function() {
 		console.log(JSON.stringify(event));
 		return caches.open("feelingunlucky").then(function(cache) {
-			return cache.match("/index.html");
+			return cache.match(event.request);
 		});
 	}));
 });
