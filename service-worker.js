@@ -19,9 +19,9 @@ self.addEventListener("install", function(event) {
 
 self.addEventListener("fetch", function(event) {
 	event.respondWith(fetch(event.request).catch(function() {
-		console.log(JSON.stringify(event));
+		console.log(JSON.stringify(event.request.url));
 		return caches.open("feelingunlucky").then(function(cache) {
-			return cache.match(event.request);
+			return cache.match(event.request.url);
 		});
 	}));
 });

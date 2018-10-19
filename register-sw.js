@@ -1,1 +1,0 @@
-navigator.serviceWorker.controller||navigator.serviceWorker.register("service-worker.js",{scope:"/"}).then(function(r){});
