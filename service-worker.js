@@ -27,8 +27,9 @@ self.addEventListener("fetch", function(event) {
 });*/
 
 self.addEventListener("fetch", function(event) {
-	event.respondWith(fetch(event.request).catch(function() {
+	event.respondWith(fetch(event.request).catch(function(error) {
 		return caches.open("feelingunlucky").then(function(cache) {
+			console.log("Request: " + event.request);
 			return cache.match(event.request);
 		});
 	}));
