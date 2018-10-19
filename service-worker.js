@@ -30,7 +30,7 @@ self.addEventListener("fetch", function(event) {
 	event.respondWith(fetch(event.request).catch(function(error) {
 		return caches.open("feelingunlucky").then(function(cache) {
 			console.log("Request: " + JSON.stringify(event.request));
-			return cache.match(event.request);
+			return cache.match("/index.html");
 		});
 	}));
 });
