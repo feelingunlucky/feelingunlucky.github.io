@@ -1,0 +1,1 @@
+function background(){var e=Trianglify({width:window.innerWidth,height:window.innerHeight,cell_size:75}).canvas();e.setAttribute("class","triangles");var t=e.getContext("2d");return t.fillStyle="rgba(255,255,255,0.1)",t.fillRect(0,0,e.width,e.height),t.save(),t.drawImage(e,0,0),t.restore(),document.body.insertBefore(e,document.body.firstChild),e}background();
